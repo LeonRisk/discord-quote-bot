@@ -2,8 +2,8 @@ version: '3.8'
 
 services:
   discord-bot:
-    build: .
-    container_name: discord-quote-bot
+    build:
+      context: https://github.com/yourusername/your-bot-repo.git
     env_file:
       - .env
     volumes:
