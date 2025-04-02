@@ -3,7 +3,7 @@ version: '3.8'
 services:
   discord-bot:
     build:
-      context: https://github.com/yourusername/your-bot-repo.git
+      context: https://github.com/LeonRisk/discord-quote-bot.git
     env_file:
       - .env
     volumes:
