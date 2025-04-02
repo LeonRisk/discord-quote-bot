@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  discord-bot:
+    build: .
+    container_name: discord-quote-bot
+    env_file:
+      - .env
+    volumes:
+      - quotes_db:/app/quotes.db
+    restart: unless-stopped
+
+volumes:
+  quotes_db:
