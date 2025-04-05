@@ -99,7 +99,7 @@ async def quote(ctx):
             str(replied_message.author),
             replied_message.content,
             ctx.channel.name,
-            replied_message.created_at.strftime("%Y-%m-%d %H:%M:%S")
+            replied_message.created_at.strftime("%Y-%m-%d %H:%M:%S"),
             ctx.guild.name
         )
         await ctx.reply(f'📌 Saved quote `#{quote_id}` from **{replied_message.author.display_name}**:\n"> {replied_message.content}"')
