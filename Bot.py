@@ -116,7 +116,7 @@ async def quote_random(ctx):
 
 @quote.command(name="list")
 async def quote_list(ctx, member: discord.Member):
-    quotes = get_quote_by_author(member.name)
+    quotes = get_quotes_by_author(member.name)
     
     if not quotes:
         await ctx.reply(f"No quotes found for {member.display_name}.")
